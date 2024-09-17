@@ -60,7 +60,6 @@
           "type": "button",
           "settings": {
             "text": "Button",
-            "color": "#e22525",
             "button_type": "primary"
           }
         }

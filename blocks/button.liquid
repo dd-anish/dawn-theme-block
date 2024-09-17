@@ -1,12 +1,10 @@
 <div>
-  <button 
+  <button
     data-theme-block-id="{{ block.id }}"
     class="theme-block-button {{ block.settings.button_type }}"
     type="button"
-    href="#"
-    style="background-color: {{ block.settings.color }};"
-  >
-    {{ block.settings.text }}
+    href="{{ block.settings.button_url }}">
+    {{ block.settings.button_text }}
   </button>
 
   {% content_for 'blocks' %}
@@ -24,15 +22,15 @@
     "settings": [
       {
         "type": "text",
-        "id": "text",
+        "id": "button_text",
         "label": "Button Label",
         "default": "Button"
       },
       {
-        "type": "color",
-        "id": "color",
-        "label": "Button Color",
-        "default": "#000000"
+        "type": "text",
+        "id": "button_url",
+        "label": "Button URL",
+        "default": "#"
       },
       {
         "type": "select",
