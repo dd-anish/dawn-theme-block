@@ -1,0 +1,64 @@
+<div>
+  <button 
+    data-theme-block-id="{{ block.id }}"
+    class="theme-block-button {{ block.settings.button_type }}"
+    type="button"
+    href="#"
+    style="background-color: {{ block.settings.color }};"
+  >
+    {{ block.settings.text }}
+  </button>
+
+  {% content_for 'blocks' %}
+
+</div>
+
+{% schema %}
+  {
+    "name": "Button",
+    "blocks": [
+      {
+        "type": "@theme"
+      }
+    ],
+    "settings": [
+      {
+        "type": "text",
+        "id": "text",
+        "label": "Button Label",
+        "default": "Button"
+      },
+      {
+        "type": "color",
+        "id": "color",
+        "label": "Button Color",
+        "default": "#000000"
+      },
+      {
+        "type": "select",
+        "id": "button_type",
+        "label": "Button Type",
+        "options": [
+          {
+            "value": "primary",
+            "label": "Primary"
+          },
+          {
+            "value": "secondary",
+            "label": "Secondary"
+          },
+          {
+            "value": "tertiary",
+            "label": "Tertiary"
+          }
+        ],
+        "default": "primary"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Button"
+      }
+    ]
+  }
+{% endschema %}

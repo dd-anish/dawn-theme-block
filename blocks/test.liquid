@@ -1,9 +1,10 @@
 <div class="theme-blocks">
-    
+
     <p class="text"></p>
         {{ block.settings.text }}
     </p>
 
+    {% comment %} For Nested Block {% endcomment %}
     {% content_for 'blocks' %}
 </div>
 

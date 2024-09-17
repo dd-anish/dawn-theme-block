@@ -1,0 +1,20 @@
+.theme-block-button.primary {
+    background-color: #3490dc;
+    /* Default primary button color */
+    color: white;
+}
+
+.theme-block-button.secondary {
+    background-color: #6c757d;
+    /* Default secondary button color */
+    color: white;
+}
+
+.theme-block-button.tertiary {
+    background-color: transparent;
+    /* Tertiary button could have no background */
+    color: #3490dc;
+    /* Tertiary button text color */
+    border: 2px solid #3490dc;
+    /* Optional border for tertiary */
+}
