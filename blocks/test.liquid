@@ -1,9 +1,10 @@
 <div class="theme-blocks">
-    {% content_for 'blocks' %}
-
+    
     <p class="text"></p>
         {{ block.settings.text }}
     </p>
+
+    {% content_for 'blocks' %}
 </div>
 
 {% comment %} 
