@@ -1,14 +1,14 @@
-.button-div-class{
-    width: 100%;
+.theme-block-section{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
+
+.button-div-class{
+    display: inline-flex;
     padding: 0 15px;
 }
 
 .theme-block-button{
-    width: 100%;
+    display: inline-flex;
     padding: 15px;
     margin-top: 10px;
     font-size: 15px;
@@ -45,7 +45,7 @@
     }
 }
 
-.theme-block-button:hover{
+/* .theme-block-button:hover{
     text-decoration: none;
     cursor: pointer;
 }
@@ -85,4 +85,4 @@
     background-color: transparent;
     color: #181C14;
     border: 1px solid #181C14;
-}
+} */

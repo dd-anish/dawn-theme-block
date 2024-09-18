@@ -7,19 +7,13 @@
     href="{{ block.settings.button_url }}">
     {{ block.settings.button_text }}
   </button>
-
-  {% content_for 'blocks' %}
+ 
 
 </div>
 
 {% schema %}
   {
     "name": "Button",
-    "blocks": [
-      {
-        "type": "@theme"
-      }
-    ],
     "settings": [
       {
         "type": "text",
