@@ -1,6 +1,21 @@
+/* Section Classes */
+
+.theme-block-section {
+    padding: 15px;
+    width: 100%;
+    background-color: bisque;
+}
+
+.theme-block-section.centered-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Button Block */
 .button-div-class{
     width: 100%;
-    padding: 0 15px;
 }
 
 .theme-block-button{
@@ -12,7 +27,7 @@
     font-weight: semibold;
     letter-spacing: 1px;
     text-transform: capitalize;
-    /* transition: background-color 0.3s, color 0.3s; */
+    transition: background-color 0.3s, color 0.3s;
 }
 
 
@@ -31,8 +46,10 @@
     .shopify-block[id*="button"] {
         display: inline-block;
     }
-    .button-div-class {
+    .button-div-class .theme-block-button{
         width: 200px;
+        text-decoration: none;
+        display: block;
     }
 
 }
@@ -92,6 +109,7 @@
     background-color: #cccccc;
     color: #ffffff;
     border: 1px solid #cccccc;
+    pointer-events: none;
 }
 
 .theme-block-button.no-url:hover {
@@ -101,10 +119,21 @@
 }
 
 
-.theme-block-button.no-hover {
-    
+/* Remove hover effect but keep the color */
+.theme-block-button.primary.no-hover:hover {
+    background-color: #0B60B0;
+    color: white;
+    border: 1px solid #0B60B0;
 }
-/* Remove hover effect when disabled */
-.theme-block-button.no-hover:hover {
-    
+
+.theme-block-button.secondary.no-hover:hover {
+    background-color: #181C14;
+    color: white;
+    border: 1px solid #181C14;
+}
+
+.theme-block-button.tertiary.no-hover:hover {
+    background-color: transparent;
+    color: #181C14;
+    border: 1px solid #181C14;
 }

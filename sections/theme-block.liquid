@@ -1,4 +1,4 @@
-<div class="theme-block-section">
+<div class="theme-block-section {% if section.settings.content_alignment == 'center' %} centered-content {% endif %}">
   {% content_for 'blocks' %}
 </div>
 
@@ -6,6 +6,24 @@
 {
   "name": "Theme Block Section",
   "blocks": [{"type": "@theme"}],
+  "settings": [
+    {
+      "type": "select",
+      "id": "content_alignment",
+      "label": "Content Alignment",
+      "options": [
+        {
+          "value": "normal",
+          "label": "Normal"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ],
+      "default": "normal"
+    }
+  ],
   "presets": [{
     "name": "Theme Block"
   }]
