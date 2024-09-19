@@ -1,7 +1,8 @@
 <div class="theme-block-section
   {% if section.settings.content_alignment == 'center' %} centered-content {% endif %}
   {% if section.settings.background_image != blank %} background-image-section {% endif %}"
-  style="{% if section.settings.background_image != blank %}background-image: url('{{ section.settings.background_image | image_url: width: 800 }}'); background-size: cover; background-position: center; background-repeat: no-repeat;{% endif %}">
+  style="{% if section.settings.background_image != blank %}background-image: url('{{ section.settings.background_image | image_url: width: 800 }}'); background-size: cover; background-position: center; background-repeat: no-repeat;{% endif %}
+         {% if section.settings.section_height == '100vh' %}height: 100vh;{% elsif section.settings.section_height == '80vh' %}height: 80vh;{% endif %}">
   {% content_for 'blocks' %}
 </div>
 
@@ -35,6 +36,26 @@
       "type": "image_picker",
       "id": "background_image",
       "label": "Background Image"
+    },
+    {
+      "type": "select",
+      "id": "section_height",
+      "label": "Section Height",
+      "options": [
+        {
+          "value": "default",
+          "label": "Default"
+        },
+        {
+          "value": "100vh",
+          "label": "100vh"
+        },
+        {
+          "value": "80vh",
+          "label": "80vh"
+        }
+      ],
+      "default": "default"
     }
   ],
   "presets": [
