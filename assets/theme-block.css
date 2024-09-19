@@ -1,14 +1,10 @@
-.theme-block-section{
-    display: flex;
-}
-
 .button-div-class{
-    display: inline-flex;
+    width: 100%;
     padding: 0 15px;
 }
 
 .theme-block-button{
-    display: inline-flex;
+    width: 100%;
     padding: 15px;
     margin-top: 10px;
     font-size: 15px;
@@ -16,8 +12,10 @@
     font-weight: semibold;
     letter-spacing: 1px;
     text-transform: capitalize;
-    transition: background-color 0.3s, color 0.3s;
+    /* transition: background-color 0.3s, color 0.3s; */
 }
+
+
 
 /* Mobile */
 /* @media (max-width: 500px) {
@@ -29,23 +27,24 @@
 
 /* Laptop */
 @media (min-width: 768px) {
+
+    .shopify-block[id*="button"] {
+        display: inline-block;
+    }
     .button-div-class {
-        flex-direction: row;
+        width: 200px;
     }
 
-    .theme-block-button {
-        width: auto;
-    }
 }
 
 /* Desktop */
 @media (min-width: 1024px) {
     .theme-block-button{
-        padding: 10px 15px;
+         
     }
 }
 
-/* .theme-block-button:hover{
+.theme-block-button:hover{
     text-decoration: none;
     cursor: pointer;
 }
@@ -58,8 +57,8 @@
 
 .theme-block-button.primary:hover {
     background-color: transparent;
-    color: #181C14;
-    border: 1px solid #181C14;
+    color: #064783;
+    border: 1px solid #064783;
 }
 
 .theme-block-button.secondary {
@@ -82,7 +81,30 @@
 }
 
 .theme-block-button.tertiary:hover {
-    background-color: transparent;
-    color: #181C14;
+    background-color: #181C14;
+    color: white;
     border: 1px solid #181C14;
-} */
+}
+
+/* Styling when no URL is present */
+.theme-block-button.no-url {
+    cursor: not-allowed;
+    background-color: #cccccc;
+    color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+.theme-block-button.no-url:hover {
+    background-color: #cccccc;
+    color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+
+.theme-block-button.no-hover {
+    
+}
+/* Remove hover effect when disabled */
+.theme-block-button.no-hover:hover {
+    
+}
