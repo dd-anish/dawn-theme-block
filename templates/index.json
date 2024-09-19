@@ -23,9 +23,9 @@
             "button_label_1": "Shop all",
             "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_label_2": "Second",
+            "button_link_2": "shopify:\/\/collections\/headless",
+            "button_style_secondary_2": true
           }
         }
       },
@@ -47,28 +47,145 @@
         "show_text_below": false
       }
     },
-    "theme_block_GWGCCY": {
+    "theme_block_HzLLT9": {
       "type": "theme-block",
       "blocks": {
-        "test_wfjnDz": {
-          "type": "test",
+        "heading_tt63Uy": {
+          "type": "heading",
           "settings": {
-            "text": "Some Example Text 1"
+            "heading_text": "Image banner",
+            "font_size": "h1"
           }
         },
-        "button_Ej9Crr": {
-          "type": "button",
+        "subheading_K9weXy": {
+          "type": "subheading",
           "settings": {
-            "text": "Button",
-            "button_type": "primary"
+            "subheading_text": "Give customers details about the banner image(s) or content on the template.",
+            "font_size": "h3"
           }
+        },
+        "paragraph_VRRfnt": {
+          "type": "paragraph",
+          "settings": {
+            "paragraph_text": "<p><strong>Lorem Ipsum <\/strong>is simply dummy text of the printing and <strong>typesetting <\/strong>industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took<\/p>",
+            "font_size": "medium"
+          }
+        },
+        "button_group_WVfrJW": {
+          "type": "button-group",
+          "settings": {
+          },
+          "blocks": {
+            "button_mRhpQJ": {
+              "type": "button",
+              "settings": {
+                "button_text": "Button",
+                "button_url": "shopify:\/\/collections\/headless",
+                "button_type": "primary",
+                "disable_hover": false,
+                "use_outline": false,
+                "use_border_radius": false
+              }
+            },
+            "button_UPpdAP": {
+              "type": "button",
+              "settings": {
+                "button_text": "Button",
+                "button_url": "shopify:\/\/collections\/headless",
+                "button_type": "secondary",
+                "disable_hover": false,
+                "use_outline": false,
+                "use_border_radius": false
+              }
+            }
+          },
+          "block_order": [
+            "button_mRhpQJ",
+            "button_UPpdAP"
+          ]
         }
       },
       "block_order": [
-        "test_wfjnDz",
-        "button_Ej9Crr"
+        "heading_tt63Uy",
+        "subheading_K9weXy",
+        "paragraph_VRRfnt",
+        "button_group_WVfrJW"
       ],
       "settings": {
+        "content_alignment": "center",
+        "background_image": "shopify:\/\/shop_images\/theme_cover_image.jpg",
+        "section_height": "80vh"
+      }
+    },
+    "theme_block_GWGCCY": {
+      "type": "theme-block",
+      "blocks": {
+        "heading_EJytCJ": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Image banner",
+            "font_size": "h1"
+          }
+        },
+        "subheading_pTWBdf": {
+          "type": "subheading",
+          "settings": {
+            "subheading_text": "Give customers details about the banner image(s) or content on the template.",
+            "font_size": "h3"
+          }
+        },
+        "paragraph_TBCMYi": {
+          "type": "paragraph",
+          "settings": {
+            "paragraph_text": "<p><strong>Lorem Ipsum<\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>",
+            "font_size": "medium"
+          }
+        },
+        "button_group_L4F9PM": {
+          "type": "button-group",
+          "settings": {
+          },
+          "blocks": {
+            "button_ByFL3e": {
+              "type": "button",
+              "settings": {
+                "button_text": "Button",
+                "button_url": "#",
+                "button_type": "primary",
+                "disable_hover": false,
+                "use_outline": true,
+                "use_border_radius": false
+              }
+            },
+            "button_D8RV9N": {
+              "type": "button",
+              "settings": {
+                "button_text": "Button",
+                "button_url": "#",
+                "button_type": "secondary",
+                "disable_hover": false,
+                "use_outline": false,
+                "use_border_radius": false
+              }
+            }
+          },
+          "block_order": [
+            "button_ByFL3e",
+            "button_D8RV9N"
+          ]
+        }
+      },
+      "block_order": [
+        "heading_EJytCJ",
+        "subheading_pTWBdf",
+        "paragraph_TBCMYi",
+        "button_group_L4F9PM"
+      ],
+      "disabled": true,
+      "settings": {
+        "content_alignment": "center",
+        "background_image": "shopify:\/\/shop_images\/theme_cover_image.jpg",
+        "section_height": "80vh"
       }
     },
     "rich_text": {
@@ -238,6 +355,7 @@
   },
   "order": [
     "image_banner",
+    "theme_block_HzLLT9",
     "theme_block_GWGCCY",
     "rich_text",
     "featured_collection",

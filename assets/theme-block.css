@@ -1,25 +1,34 @@
 /* Section Classes */
 
 .theme-block-section {
-    padding: 15px;
+    padding: 20px 15px;
     width: 100%;
     background-color: bisque;
 }
 
 .theme-block-section.centered-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
     text-align: center;
 }
 
-
-/* Button Block */
-.button-div-class{
+/* Button Group */
+.button-group{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 0;
 }
 
 .theme-block-button{
     width: 100%;
     padding: 15px;
-    margin-top: 10px;
     font-size: 15px;
     text-align: center; 
     font-weight: semibold;
@@ -30,45 +39,59 @@
     display: block;
 }
 
-/* 
-.shopify-block[id*="button"] {
-    display: block;
-} */
-
-/* Mobile */
-/* @media (max-width: 500px) {
-    .theme-block-button {
-        padding: 10px 15px;
-    }
+.paragraph-block > .paragraph-text{
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    /* Number of lines before truncating */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
-*/
+
+
+.shopify-block[id*="button"] {
+    width: 100%;
+}
+
 
 /* Laptop */
 @media (min-width: 768px) {
 
     .shopify-block[id*="button"] {
-        display: inline-block;
+        width: auto;
     }
+
+    /* Button Group */
+    .button-group {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
     .button-div-class .theme-block-button{
         width: 200px;
         color: inherit;
-        margin-left: 5px;
-        margin-right: 5px;
+    }
+
+    .paragraph-block>.paragraph-text {
+        display: block; /* Reset the display property */
+        -webkit-line-clamp: unset; /* Remove the line clamp */
+        -webkit-box-orient: unset; /* Reset box-orient */
+        overflow: visible; /* Show all the content */
+        text-overflow: unset; /* Disable ellipsis */
     }
 
 }
 
 /* Desktop */
 @media (min-width: 1024px) {
-    .theme-block-button{
-         
-    }
+   
 }
-
-/* .theme-block-button:hover{
-    text-decoration: none;
-    cursor: pointer;
-} */
 
 .theme-block-button.border-radius {
     border-radius: 5px;
