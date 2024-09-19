@@ -1,0 +1,44 @@
+<div class="heading-block">
+  {% assign heading_tag = block.settings.font_size %}
+  <{{ heading_tag }} class="heading-text">{{ block.settings.heading_text }}</{{ heading_tag }}>
+</div>
+
+{% schema %}
+    {
+  "name": "Heading",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading_text",
+      "label": "Heading Text",
+      "default": "Your Heading"
+    },
+    {
+      "type": "select",
+      "id": "font_size",
+      "label": "Font Size",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        }
+      ],
+      "default": "h2"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Heading"
+    }
+  ]
+}
+
+{% endschema %}

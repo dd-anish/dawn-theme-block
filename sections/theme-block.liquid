@@ -1,11 +1,19 @@
-<div class="theme-block-section {% if section.settings.content_alignment == 'center' %} centered-content {% endif %}">
+<div class="theme-block-section
+  {% if section.settings.content_alignment == 'center' %} centered-content {% endif %}
+  {% if section.settings.background_image != blank %} background-image-section {% endif %}"
+  style="{% if section.settings.background_image != blank %}background-image: url('{{ section.settings.background_image | image_url: width: 800 }}'); background-size: cover; background-position: center; background-repeat: no-repeat;{% endif %}">
   {% content_for 'blocks' %}
 </div>
+
 
 {% schema %}
 {
   "name": "Theme Block Section",
-  "blocks": [{"type": "@theme"}],
+  "blocks": [
+    {
+      "type": "@theme"
+    }
+  ],
   "settings": [
     {
       "type": "select",
@@ -22,10 +30,18 @@
         }
       ],
       "default": "normal"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
     }
   ],
-  "presets": [{
-    "name": "Theme Block"
-  }]
+  "presets": [
+    {
+      "name": "Theme Block"
+    }
+  ]
 }
+
 {% endschema %}

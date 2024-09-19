@@ -1,0 +1,32 @@
+<style>
+  .background-image-block {
+    background-image: url('{{ block.settings.background_image | file_url }}');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Adjust height as needed */
+  }
+</style>
+
+<div class="background-image-block">
+  <!-- Content here -->
+</div>
+
+{% schema %}
+    {
+  "name": "Background Image",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Background Image"
+    }
+  ]
+}
+
+{% endschema %}

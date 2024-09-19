@@ -1,0 +1,45 @@
+<div class="subheading-block">
+  {% assign subheading_tag = block.settings.font_size %}
+  <{{ subheading_tag }} class="subheading-text">
+    {{ block.settings.subheading_text }}</{{ subheading_tag }}>
+  </div>
+
+  {% schema %}
+    {
+      "name": "Subheading",
+      "settings": [
+        {
+          "type": "text",
+          "id": "subheading_text",
+          "label": "Subheading Text",
+          "default": "Your Subheading"
+        },
+        {
+          "type": "select",
+          "id": "font_size",
+          "label": "Font Size",
+          "options": [
+            {
+              "value": "h3",
+              "label": "H3"
+            },
+            {
+              "value": "h4",
+              "label": "H4"
+            },
+            {
+              "value": "h5",
+              "label": "H5"
+            }
+          ],
+          "default": "h4"
+        }
+      ],
+      "presets": [
+        {
+          "name": "Subheading"
+        }
+      ]
+    }
+
+  {% endschema %}
