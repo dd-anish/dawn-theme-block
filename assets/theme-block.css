@@ -77,8 +77,8 @@
 
 .theme-block-button.primary:hover {
     background-color: transparent;
-    color: #064783;
-    border: 1px solid #064783;
+    color: #0B60B0;
+    border: 1px solid #0B60B0;
 }
 
 .theme-block-button.secondary {
@@ -93,18 +93,6 @@
     border: 1px solid #181C14;
 }
 
-.theme-block-button.tertiary {
-    background-color: transparent;
-    color: #181C14;
-    border: 1px solid #181C14;
- 
-}
-
-.theme-block-button.tertiary:hover {
-    background-color: #181C14;
-    color: white;
-    border: 1px solid #181C14;
-}
 
 /* Styling when no URL is present */
 .theme-block-button.no-url {
@@ -120,7 +108,7 @@
     color: #0B60B0;
 }
 
-.theme-block-button.primary.outline-button:hover {
+.theme-block-button.primary.outline-button:not(.no-hover):hover {
     box-shadow: inset 0px 0px 1px 1px #0B60B0;
     transition: ease-in-out 0.1s;
 }
@@ -130,36 +118,20 @@
     color: #181C14;
 }
 
-.theme-block-button.secondary.outline-button:hover {
+.theme-block-button.secondary.outline-button:not(.no-hover):hover {
     box-shadow: inset 0px 0px 1px 1px #181C14;
     transition: ease-in-out 0.1s;
 }
 
-.theme-block-button.tertiary.outline-button {
-    background-color: transparent;
-    color: #181C14;
-}
-
-.theme-block-button.tertiary.outline-button:hover {
-    border: 1px solid #181C14;
-}
-
-
 /* Remove hover effect but keep the color */
-.theme-block-button.primary.no-hover:hover {
+.theme-block-button.primary.no-hover:not(.outline-button):hover {
     background-color: #0B60B0;
     color: white;
     border: 1px solid #0B60B0;
 }
 
-.theme-block-button.secondary.no-hover:hover {
+.theme-block-button.secondary.no-hover:not(.outline-button):hover {
     background-color: #181C14;
     color: white;
-    border: 1px solid #181C14;
-}
-
-.theme-block-button.tertiary.no-hover:hover {
-    background-color: transparent;
-    color: #181C14;
     border: 1px solid #181C14;
 }
