@@ -30,12 +30,6 @@
     transition: background-color 0.3s, color 0.3s;
 }
 
-.theme-block-button a{
-    text-decoration: none;
-    color: inherit;
-}
-
-
 /* Mobile */
 /* @media (max-width: 500px) {
     .theme-block-button {
@@ -52,6 +46,9 @@
     }
     .button-div-class .theme-block-button{
         width: 200px;
+        text-decoration: none;
+            color: inherit;
+            display: block;
     }
 
 }
@@ -63,9 +60,13 @@
     }
 }
 
-.theme-block-button:hover{
+/* .theme-block-button:hover{
     text-decoration: none;
     cursor: pointer;
+} */
+
+.theme-block-button.border-radius {
+    border-radius: 5px;
 }
 
 .theme-block-button.primary {
@@ -106,33 +107,43 @@
 }
 
 /* Styling when no URL is present */
-.theme-block-button:disabled {
+.theme-block-button.no-url {
     cursor: not-allowed;
     background-color: #cccccc;
     color: #ffffff;
     border: 1px solid #cccccc;
 }
 
-.theme-block-button:disabled:hover {
-    background-color: #cccccc;
-    color: #ffffff;
-    border: 1px solid #cccccc;
+/* Styling for outline buttons */
+.theme-block-button.primary.outline-button {
+    background-color: transparent;
+    color: #0B60B0;
 }
 
-/* .theme-block-button.no-url {
-    cursor: not-allowed;
-    background-color: #cccccc;
-    color: #ffffff;
-    border: 1px solid #cccccc;
-    pointer-events: none;
+.theme-block-button.primary.outline-button:hover {
+    box-shadow: inset 0px 0px 1px 1px #0B60B0;
+    transition: ease-in-out 0.1s;
 }
 
-.theme-block-button.no-url:hover {
-    background-color: #cccccc;
-    color: #ffffff;
-    border: 1px solid #cccccc;
+.theme-block-button.secondary.outline-button {
+    background-color: transparent;
+    color: #181C14;
 }
- */
+
+.theme-block-button.secondary.outline-button:hover {
+    box-shadow: inset 0px 0px 1px 1px #181C14;
+    transition: ease-in-out 0.1s;
+}
+
+.theme-block-button.tertiary.outline-button {
+    background-color: transparent;
+    color: #181C14;
+}
+
+.theme-block-button.tertiary.outline-button:hover {
+    border: 1px solid #181C14;
+}
+
 
 /* Remove hover effect but keep the color */
 .theme-block-button.primary.no-hover:hover {
