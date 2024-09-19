@@ -1,0 +1,14 @@
+<div class="button-group">
+    {% comment %} For Nested Block {% endcomment %}
+    {% content_for 'blocks' %}
+</div>
+
+{% schema %}
+{
+  "name": "Button Group",
+  "blocks": [{"type": "@app"}, {"type": "@theme"}],
+  "presets":[{
+      "name": "Button Group"
+    }]
+}
+{% endschema %}

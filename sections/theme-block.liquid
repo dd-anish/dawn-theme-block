@@ -2,7 +2,7 @@
   {% if section.settings.content_alignment == 'center' %} centered-content {% endif %}
   {% if section.settings.background_image != blank %} background-image-section {% endif %}"
   style="{% if section.settings.background_image != blank %}background-image: url('{{ section.settings.background_image | image_url: width: 800 }}'); background-size: cover; background-position: center; background-repeat: no-repeat;{% endif %}
-         {% if section.settings.section_height == '100vh' %}height: 100vh;{% elsif section.settings.section_height == '80vh' %}height: 80vh;{% endif %}">
+         {% if section.settings.section_height == '80vh' %}height: 80vh;{% elsif section.settings.section_height == '100vh' %}height: 100vh;{% endif %}">
   {% content_for 'blocks' %}
 </div>
 
