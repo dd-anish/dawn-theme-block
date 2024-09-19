@@ -1,11 +1,14 @@
 <div class="button-div-class">
-  <a
+  <button
     data-theme-block-id="{{ block.id }}"
     class="theme-block-button {{ block.settings.button_type }} {% if block.settings.button_url == blank %} no-url {% endif %} {% if block.settings.disable_hover %} no-hover {% endif %}"
-    href="{{ block.settings.button_url }}"
-    target="_blank">
-    {{ block.settings.button_text }}
-  </a>
+    {% if block.settings.button_url == blank %}
+    disabled
+    {% endif %}>
+    <a href="{{ block.settings.button_url }}" target="_blank">
+      {{ block.settings.button_text }}
+    </a>
+  </button>
 </div>
 
 {% schema %}
