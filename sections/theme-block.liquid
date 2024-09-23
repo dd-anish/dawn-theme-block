@@ -3,7 +3,7 @@
   {% if section.settings.content_alignment == 'center' %} centered-content {% endif %}
   {% if section.settings.background_image != blank %} background-image-section {% endif %}"
   style="
-  {% if section.settings.background_color %} background-color: {{section.settings.background_color}} {% endif %} 
+  {% if section.settings.background_image == blank and section.settings.background_color %} background-color: {{section.settings.background_color}} {% endif %} 
   {% if section.settings.background_image != blank %}
     background-image: url('{{ section.settings.background_image | image_url: width: 800 }}'); background-size: cover; background-position: center; background-repeat: no-repeat;
     {% endif %}
