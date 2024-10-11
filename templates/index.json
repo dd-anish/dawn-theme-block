@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "image_banner": {
@@ -21,10 +30,10 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
+            "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": true,
             "button_label_2": "Second",
-            "button_link_2": "shopify:\/\/collections\/headless",
+            "button_link_2": "shopify://collections/headless",
             "button_style_secondary_2": true
           }
         }
@@ -67,7 +76,7 @@
         "paragraph_VRRfnt": {
           "type": "paragraph",
           "settings": {
-            "paragraph_text": "<p><strong>Lorem Ipsum <\/strong>is simply dummy text of the printing and <strong>typesetting <\/strong>industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took<\/p>",
+            "paragraph_text": "<p><strong>Lorem Ipsum </strong>is simply dummy text of the printing and <strong>typesetting </strong>industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took</p>",
             "font_size": "medium"
           }
         },
@@ -80,7 +89,7 @@
               "type": "button",
               "settings": {
                 "button_text": "Button",
-                "button_url": "shopify:\/\/collections\/headless",
+                "button_url": "shopify://collections/headless",
                 "button_type": "primary",
                 "disable_hover": false,
                 "use_outline": false,
@@ -91,7 +100,7 @@
               "type": "button",
               "settings": {
                 "button_text": "Button",
-                "button_url": "shopify:\/\/collections\/headless",
+                "button_url": "shopify://collections/headless",
                 "button_type": "secondary",
                 "disable_hover": false,
                 "use_outline": false,
@@ -112,8 +121,9 @@
         "button_group_WVfrJW"
       ],
       "settings": {
-        "content_alignment": "center",
-        "background_image": "shopify:\/\/shop_images\/theme_cover_image.jpg",
+        "background_color": "",
+        "content_alignment": "normal",
+        "background_image": "shopify://shop_images/theme_cover_image.jpg",
         "section_height": "80vh"
       }
     },
@@ -137,7 +147,7 @@
         "paragraph_TBCMYi": {
           "type": "paragraph",
           "settings": {
-            "paragraph_text": "<p><strong>Lorem Ipsum<\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>",
+            "paragraph_text": "<p><strong>Lorem Ipsum</strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>",
             "font_size": "medium"
           }
         },
@@ -183,8 +193,9 @@
       ],
       "disabled": true,
       "settings": {
+        "background_color": "",
         "content_alignment": "center",
-        "background_image": "shopify:\/\/shop_images\/theme_cover_image.jpg",
+        "background_image": "shopify://shop_images/theme_cover_image.jpg",
         "section_height": "80vh"
       }
     },
@@ -201,7 +212,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
           }
         }
       },
@@ -291,7 +302,7 @@
         "heading": "",
         "heading_size": "h1",
         "enable_video_looping": false,
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "",
         "full_width": false,
         "color_scheme": "scheme-1",
@@ -306,7 +317,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -315,7 +326,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -324,7 +335,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
